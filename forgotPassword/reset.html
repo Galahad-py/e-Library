@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <script src="/forgotPassword/reset.js" defer></script>
+
+</head>
+<body>
+    <div class="forgotPasswordContainer">
+        <h3>Forgot Password?</h3>
+        <p>No worries, we'll send you reset instructions.</p>
+
+        <form id="resetForm" novalidate>
+            <label for="email">Email</label>
+            <input 
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="Enter your email address"
+            autocomplete="on"
+            required>
+            <span id="emailError" class="error"></span>
+            <button type="submit">Reset Password</button>
+        </form>
+
+        <a class="returnText" href="/login/login.html"><p>Back to login</p></a>
+    </div>
+</body>
+</html>
