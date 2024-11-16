@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
     <script src="/login.js" defer></script>
 
 
@@ -25,14 +30,17 @@
                 <label for="username">
                     <input type="text" placeholder="Enter Your Username" id="username" name="username">
                 </label>
-                <label for="password">
-                    <input 
-                    type="password" 
-                    placeholder="Enter Your Password" 
-                    id="password" 
-                    name="password"
-                    required>
-                </label>
+                <div class="password-container">
+                    <label for="password">
+                        <input 
+                        type="password" 
+                        placeholder="Enter Your Password" 
+                        id="password" 
+                        name="password"
+                        required>
+                    </label>
+                    <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+                </div>
                 <span id="passwordError" class="error"></span>
             </form>
     
@@ -43,7 +51,7 @@
             <button type="button">Sign in</button> 
         </div>
 
-        <p class="notAUser" >Not a User? <span>Create an account.</span></p>
+        <p class="notAUser">Not a User? <span>Create an account.</span></p>
            
     </div>
 </body>

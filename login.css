@@ -131,7 +131,43 @@ button:hover {
 }
 
 /* styles for password validation */
+.password-container {
+  position: relative;
+  width: 100%;
+}
 
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(108, 207, 239);
+  transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+  color: rgb(50, 150, 200);
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    padding-right: 45px;
+}
+
+.error {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: rgb(239, 68, 68);
+  text-align: left;
+  min-height: 1.5em;
+  line-height: 1.2;
+}
+
+.password-container input {
+  transition: all 0.3s ease;
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
